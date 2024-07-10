@@ -1,0 +1,36 @@
+/* src/styles/List.css */
+.list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../Assets/background.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-content > * {
+    margin: 1rem 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .list-container {
+        padding: 2rem;
+    }
+
+    .list-content > * {
+        margin: 1.5rem 0;
+    }
+}
